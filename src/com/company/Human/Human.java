@@ -45,7 +45,13 @@ public class Human {
         this.age = age;
     }
 
-
+    @Override
+    public String toString() {
+        return "Name: " + name + ","
+                + "\nSurname: " + surname + ","
+                + "\nAge: " + age + ","
+                + "\nAddress: " + address + ".";
+    }
 
 
 }
