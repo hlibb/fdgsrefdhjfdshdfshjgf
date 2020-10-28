@@ -53,5 +53,15 @@ public class Human {
                 + "\nAddress: " + address + ".";
     }
 
-
+    @Override
+    public boolean equals(Object object) {
+        if (object == null) return false;
+        if (!(object instanceof Human)) return false;
+        Human h = (Human) object;
+        return h.name == name
+                && h.surname == surname
+                && h.age == age
+                && h.address == address;
+    }
+    
 }
